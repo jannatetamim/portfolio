@@ -1,0 +1,150 @@
+/* =========================
+   HEADER
+========================= */
+
+@media (max-width: 1199px) {
+  .header {
+    background-color: var(--background-color);
+    border-right: 1px solid
+      color-mix(in srgb, var(--default-color), transparent 90%);
+    width: 300px;
+    left: -100%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .header ~ main {
+    margin-left: 160px;
+  }
+
+  .header ~ main .hero {
+    margin-left: -160px;
+    width: 100vw;
+  }
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+@media (min-width: 992px) {
+  .navmenu a,
+  .navmenu a:focus {
+    max-width: 56px;
+  }
+
+  .navmenu a span,
+  .navmenu a:focus span {
+    display: none;
+  }
+}
+
+/* =========================
+   AOS
+========================= */
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/* =========================
+   HERO
+========================= */
+
+@media (max-width: 992px) {
+  .hero h2 {
+    font-size: 54px;
+  }
+
+  .hero p {
+    font-size: 22px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  section,
+  .section {
+    padding: 70px 0;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.82) 0%,
+      rgba(255, 255, 255, 0.55) 100%
+    ) !important;
+  }
+
+  .services .service-item,
+  .testimonials .testimonial-item,
+  .contact .php-email-form {
+    padding: 30px;
+  }
+
+  .portfolio .portfolio-item .portfolio-info {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero .social-links a {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+
+  .about .content h2 {
+    font-size: 28px;
+  }
+
+  .footer h3 {
+    font-size: 34px;
+  }
+
+  .portfolio .portfolio-filters li {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+
+  .portfolio-details .swiper-button-prev,
+  .portfolio-details .swiper-button-next {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .hero::before {
+    background: rgba(255, 255, 255, 0.12);
+  }
+}
+
+@media (max-width: 450px) {
+  .hero::before {
+    background: transparent;
+  }
+}
